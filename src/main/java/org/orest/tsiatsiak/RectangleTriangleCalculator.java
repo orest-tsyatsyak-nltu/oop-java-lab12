@@ -20,13 +20,13 @@ import static java.lang.Math.sqrt;
 
 public class RectangleTriangleCalculator extends JFrame {
 
-    private final MyTextField catetA = new MyTextField();
+    private final TextFieldWithPretunedSize catetA = new TextFieldWithPretunedSize();
 
-    private final MyTextField catetB = new MyTextField();
+    private final TextFieldWithPretunedSize catetB = new TextFieldWithPretunedSize();
 
-    private final MyTextField hypotenuse = new MyTextField();
+    private final TextFieldWithPretunedSize hypotenuse = new TextFieldWithPretunedSize();
 
-    private final MyTextField triangleArea = new MyTextField();
+    private final TextFieldWithPretunedSize triangleArea = new TextFieldWithPretunedSize();
 
     public RectangleTriangleCalculator() {
         setUpWindow();
@@ -127,9 +127,9 @@ public class RectangleTriangleCalculator extends JFrame {
     }
 
 
-    private static class MyTextField extends JTextField {
+    private static class TextFieldWithPretunedSize extends JTextField {
 
-        public MyTextField() {
+        public TextFieldWithPretunedSize() {
             setPreferredSize(new Dimension(150, 20));
         }
 
